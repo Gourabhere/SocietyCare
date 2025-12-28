@@ -1,0 +1,7 @@
+{
+  "name": "SocietyCare Housekeeping",
+  "description": "A comprehensive housekeeping management app for large housing societies, featuring block-wise tracking, floor-level checklists, and AI-powered maintenance reporting.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
