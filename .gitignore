@@ -97,3 +97,7 @@ app.*.map.json
 
 # Node modules (if any)
 node_modules/
+
+# React build output
+dist/
+build/
