@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "3D Perspective Viewer",
+    "slug": "3d-perspective-viewer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.perspectiveviewer.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to capture images and track head position for 3D perspective viewing",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to select images for 3D conversion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.perspectiveviewer.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
