@@ -7,6 +7,7 @@ import '../models/task_model.dart';
 import '../providers/auth_provider.dart';
 import '../providers/task_provider.dart';
 import '../widgets/progress_bar_widget.dart';
+import '../features/puja_dashboard/presentation/screens/puja_dashboard_screen.dart';
 import 'block_selection_screen.dart';
 import 'login_screen.dart';
 
@@ -43,6 +44,15 @@ class _StaffDashboardScreenState extends ConsumerState<StaffDashboardScreen> {
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: _loadData,
+          ),
+          IconButton(
+            tooltip: 'Puja Dashboard',
+            icon: const Icon(Icons.account_balance_wallet_outlined),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const PujaDashboardScreen()),
+              );
+            },
           ),
           IconButton(
             icon: const Icon(Icons.logout),
